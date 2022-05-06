@@ -44,7 +44,7 @@ app.get('*', function (request, response) {
 app.use(notFoundMiddleware);
 app.use(errorHandlerMiddleware);
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 9000;
 const start = async () => {
   try {
     await connectDB(process.env.MONGO_URL);
